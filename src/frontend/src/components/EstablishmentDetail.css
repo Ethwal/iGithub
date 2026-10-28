@@ -1,0 +1,233 @@
+.detail-panel {
+  width: 380px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #ecf0f1;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+
+.detail-header h2 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  padding: 0 4px;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.detail-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.rating-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.rating-stars {
+  color: #f39c12;
+  font-size: 1.2rem;
+}
+
+.review-count {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.reviews-section {
+  padding: 16px 20px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.reviews-section h3 {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-item {
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.review-rating {
+  color: #f39c12;
+  font-size: 0.9rem;
+}
+
+.review-date {
+  color: #95a5a6;
+  font-size: 0.8rem;
+}
+
+.review-comment {
+  color: #34495e;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.no-reviews {
+  color: #95a5a6;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.add-review-section {
+  padding: 16px 20px;
+}
+
+.add-review-section h3 {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.star-rating {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.star {
+  font-size: 1.8rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star.active {
+  color: #f39c12;
+}
+
+.star:hover {
+  color: #f1c40f;
+}
+
+.add-review-section textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.add-review-section textarea:focus {
+  border-color: #3498db;
+}
+
+.error-message {
+  background: #fee;
+  color: #c0392b;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 10px 20px;
+  background: #3498db;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.btn-submit:hover:not(:disabled) {
+  background: #2980b9;
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.review-amenities {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.amenity-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  background: #e8f6f3;
+  color: #1a8a5e;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.amenity-checkboxes {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3498db;
+  cursor: pointer;
+}
